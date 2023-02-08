@@ -2,14 +2,28 @@
 int main()
 {
 
-	float hours=5.5;
-	int min= hours *60;
-	printf("%.1f Hours in min = %d\n",hours,min);
-	
-	int sec = hours * 3600;
-	printf("%.1f Hours in sec = %d",hours,sec);
 
+	int rows;
+	printf("How many Rows: ");
+	scanf("%d",&rows);
 	
-
-	return 0;
+	for(int i=1; i<=rows; i++)
+	{
+		for(int j=1; j<=i; j++)
+		{
+			printf("*");
+			
+		}
+		printf("\n");
+	}
+	int row=rows-1;
+	for(int k=1; k<=row; k++)
+	{
+		for(int l=row; l>=k; l--)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
 }
+
